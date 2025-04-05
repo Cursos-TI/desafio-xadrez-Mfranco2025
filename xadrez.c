@@ -1,32 +1,43 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
+
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    //variaveis para controlar o numero de casas que cada peça deve se mover
+    int casasTorre = 5;
+    int casasBisbo = 5;
+    int casasRainha = 8;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    //Variaveis para controlar as estruturas de repetição
+    int i; // para o for
+    int j = 0; // para o while
+    int k = 0; // para o Do
+    int m = 0; // para o Cabalo
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //movimentando a torre ultilizano o loop for.
+    //A torre se move 5 casas para a direita.
+    printf("Movimento da Torre (5 casas à direita):\n");
+    for (i = 1; i <= casasTorre; i++) {
+        printf("Direita\n");
+    }
+    printf("\n"); //Linha em branco para as separar a movimentação das peças 
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    //Movimentando o Bispo ultilizando o loop while
+    //O bispo se move 5 casas na diagonal combinando "cima" e  "direita"
+    printf("Movimentando o Bispo: (5 casas para cima e à direita):\n");
+    while (j < casasBisbo) {
+        printf("Cima, Direita\n");
+        j++;
+    }
+    printf("\n"); // linha em branco
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //Movimento da Rainha ultilizando o loop do-while
+    //A Rainha se move 8 casas para esquerda
+    printf("Movimento da Rainha: (8 casas para esquerda):\n");
+    do {
+        k++;
+        printf("Esquerda\n");
+    } while (k < casasRainha);
 
     return 0;
 }
