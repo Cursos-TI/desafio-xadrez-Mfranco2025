@@ -12,7 +12,6 @@ int main() {
     int i; // para o for
     int j = 0; // para o while
     int k = 0; // para o Do
-    int m = 0; // para o Cabalo
 
     //movimentando a torre ultilizano o loop for.
     //A torre se move 5 casas para a direita.
