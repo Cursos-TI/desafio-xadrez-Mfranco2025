@@ -7,12 +7,15 @@ int main() {
     int casasTorre = 5;
     int casasBisbo = 5;
     int casasRainha = 8;
+    int casasCavalo = 3;
 
     //Variaveis para controlar as estruturas de repetição
-    int i; // para o for
-    int j = 0; // para o while
-    int k = 0; // para o Do
+    int i; // para a torre
+    int j = 0; // para o Bispo
+    int k = 0; // para a Rainha
+    int m = 0; // para o cavalo
 
+   
     //movimentando a torre ultilizano o loop for.
     //A torre se move 5 casas para a direita.
     printf("Movimento da Torre (5 casas à direita):\n");
@@ -37,6 +40,20 @@ int main() {
         k++;
         printf("Esquerda\n");
     } while (k < casasRainha);
+    printf("\n");
 
+     // Nível Aventureiro - Movimentando o Cavalo
+     // cavalo faz 2 movimentos para baixo e 1 movimento para a esquerda
+     printf("Movimento do Cavalo (2 casas para baixo e 1 casa para a esquerda):\n");
+     while (m < casasCavalo) {  
+        if (m < 2) {  // Primeiras 2 iterações (m = 0 ou 1): move para baixo
+            for (i = 1; i <= 1; i++) {  // Loop for executa 2 vezes respeitando o if
+                printf("Baixo\n");
+            }
+        } else {  
+            printf("Esquerda\n"); 
+        }
+        m++;
+    }
     return 0;
 }
